@@ -5,7 +5,14 @@
     <title>Flask Tutorial</title>
   </head>
   <body>
-    <h1> My First Try Using Flask </h1>
-    <p> Flask is Fun </p>
+    <h1>Flask</h1>
+    <pre>Maximum Price: {{max}}    Minimum Price: {{min}}</pre>
+    {%for i in range(0, len)%} 
+      <tr>
+        <td>{{consoles[i]['title']}}</td>
+        <td>{{consoles[i]['price']}}</td>
+        <hr>
+      </tr>
+    {%endfor%}
   </body>
 </html>
