@@ -1,5 +1,6 @@
 import pytest
 from Scraper import PageScraper
+
 def test_PageScraper_List():
     containsTitle = False
     containsPrice = False
