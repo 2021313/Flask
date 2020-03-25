@@ -1,7 +1,6 @@
 #Scraper
 import requests
 from bs4 import BeautifulSoup
-
 def PageScraper():
     cnt = 1
     page = 1 

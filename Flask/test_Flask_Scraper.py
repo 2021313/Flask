@@ -1,6 +1,5 @@
 import pytest
 from Scraper import PageScraper
-
 def test_PageScraper_List():
     containsTitle = False
     containsPrice = False
@@ -20,7 +19,6 @@ def test_PageScraper_List():
             print("Fail")
             i + 1
     assert containsTitle == True and containsPrice == True
-
 def test_PageScraper_Min_Max():
     z, maxprice, minprice = PageScraper()
     print(z[0])
