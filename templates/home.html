@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Flask Tutorial</title>
+  </head>
+  <body>
+    <h1>Flask</h1>
+    <pre>Maximum Price: {{max}}    Minimum Price: {{min}}</pre>
+    {%for i in range(0, len)%} 
+      <tr>
+        <td>{{consoles[i]['title']}}</td>
+        <td>{{consoles[i]['price']}}</td>
+        <hr>
+      </tr>
+    {%endfor%}
+  </body>
+</html>
